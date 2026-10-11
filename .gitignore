@@ -1,0 +1,70 @@
+# =========================================================
+# ConcertBooking - .gitignore
+# Solution Visual Studio 2026 / .NET 10 / SQLite
+# =========================================================
+
+# ---------- Fichiers personnels Claude Code (jamais sur GitHub) ----------
+CLAUDE.local.md
+.claude/settings.local.json
+
+# ---------- Visual Studio ----------
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.rsuser
+
+# ---------- Visual Studio Code / Rider (si utilisés) ----------
+.vscode/
+.idea/
+
+# ---------- Résultats de build ----------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+publish/
+artifacts/
+
+# ---------- Tests et couverture de code ----------
+[Tt]est[Rr]esult*/
+coverage*/
+*.coverage
+*.coveragexml
+
+# ---------- NuGet ----------
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# ---------- Base de données SQLite (jamais commitée) ----------
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ---------- Logs Serilog ----------
+logs/
+*.log
+
+# ---------- Secrets et configuration locale ----------
+# Les secrets de développement passent par "dotnet user-secrets" (stockés hors du dépôt).
+.env
+.env.*
+appsettings.*.local.json
+*.pfx
+*.p12
+
+# ---------- Système ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IMPORTANT : ne PAS ignorer le dossier Data/Migrations,
+# les migrations EF Core font partie du code source.

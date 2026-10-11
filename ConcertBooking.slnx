@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Concerts.Api/Concerts.Api.csproj" />
+  </Folder>
+</Solution>
